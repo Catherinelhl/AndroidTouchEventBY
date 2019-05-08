@@ -1,9 +1,10 @@
-package io.catherine.touchevent
+package io.catherine.touchevent.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.widget.TextView
+import io.catherine.touchevent.tool.StringTools
 
 /*
 +--------------+---------------------------------
@@ -24,12 +25,16 @@ import android.widget.TextView
 class SelfTextView(context: Context?, attrs: AttributeSet?) : TextView(context, attrs) {
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        println("SelfTextView onTouchEvent...${StringTools.getActionNameBy(event!!.action)}")
+        println("SelfTextView onTouchEvent...${StringTools.getActionNameBy(
+            event!!.action
+        )}")
         return super.onTouchEvent(event)
     }
 
     override fun dispatchTouchEvent(event: MotionEvent?): Boolean {
-        println("SelfTextView dispatchTouchEvent ...${StringTools.getActionNameBy(event!!.action)}")
+        println("SelfTextView dispatchTouchEvent ...${StringTools.getActionNameBy(
+            event!!.action
+        )}")
         return super.dispatchTouchEvent(event)
     }
 }

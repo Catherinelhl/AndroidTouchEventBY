@@ -5,9 +5,9 @@
     android:id="@+id/cl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
-    <io.catherine.touchevent.SeleViewGroup
+    <io.catherine.touchevent.views.SeleViewGroup
         android:id="@+id/v"
         android:layout_width="250dp"
         android:layout_height="250dp"
@@ -17,7 +17,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <io.catherine.touchevent.SelfTextView
+    <io.catherine.touchevent.views.SelfTextView
         android:id="@+id/tv"
         android:layout_width="100dp"
         android:layout_height="100dp"

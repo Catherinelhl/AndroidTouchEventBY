@@ -1,10 +1,11 @@
-package io.catherine.touchevent
+package io.catherine.touchevent.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MotionEvent
-import android.view.View
+import io.catherine.touchevent.R
+import io.catherine.touchevent.tool.StringTools
 import kotlinx.android.synthetic.main.activity_main.*
 
 /*
@@ -80,7 +81,9 @@ class MainActivity : AppCompatActivity() {
      * Activity的DispatchTouchEvent
      */
     override fun dispatchTouchEvent(event: MotionEvent?): Boolean {
-        println("activity dispatchTouchEvent...${StringTools.getActionNameBy(event!!.action)}")
+        println("activity dispatchTouchEvent...${StringTools.getActionNameBy(
+            event!!.action
+        )}")
         return super.dispatchTouchEvent(event)
     }
 
